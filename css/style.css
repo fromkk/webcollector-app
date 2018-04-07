@@ -96,6 +96,18 @@ header {
 	display: none;
 }
 
+.social::after {
+	clear: both;
+	content: '';
+	display: block;
+}
+
+.social div {
+	width: 120px;
+	height: 24px;
+	float: left;
+}
+
 .catchcopy {
 	position: absolute;
 	width: 800px;
