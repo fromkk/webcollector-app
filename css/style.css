@@ -1,0 +1,180 @@
+@charset "UTF-8";
+
+/*
+ lightblue: #33DFED
+ darkblue: #3398C8
+*/
+
+html, body {
+	padding: 0;
+	margin: 0;
+	font-family: -apple-system, 'BlinkMacSystemFont',  Sans-Serif;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+h1 {
+	font-size: 32px;
+	line-height: 48px;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 24px;
+	line-height: 32px;
+	font-weight: bold;
+}
+
+h3 {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: bold;
+}
+
+h4 {
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: bold;
+}
+
+h5 {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: bold;
+}
+
+h6 {
+	font-size: 12px;
+	line-height: 14px;
+	font-weight: bold;
+}
+
+.header {
+	background: linear-gradient(to bottom right, #33DFED, #3398C8);
+	margin: 0;
+	height: 432px;
+	color: white;
+}
+
+.container {
+	width: 1200px;
+	margin: 0 auto 0 auto;
+	padding: 16px 0px 16px 0px;
+	position: relative;
+}
+
+.header .container {
+	height: 100%;
+}
+
+.iphone.pc {
+	display: block;
+	position: absolute;
+	top: 20px;
+	right: 64px;
+	width: 250px;
+	height: 504px;
+}
+
+.iphone.sp {
+	display: none;
+}
+
+.catchcopy {
+	position: absolute;
+	width: 800px;
+	bottom: 20px;
+}
+
+.appstore {
+	text-align: center;
+	margin-top: 32px;
+}
+
+.features {
+	margin-top: 32px;
+}
+
+.features::after {
+	clear: both;
+}
+
+.features > .item {
+	width: 33%;
+	float: left;
+}
+
+.features > .item > .icon {
+	text-align: center;
+}
+
+.features > .item > .description {
+	margin-top: 16px;
+	padding: 16px;
+	text-align: center;
+}
+
+@media screen and (max-width: 1199px) {
+	.container {
+		width: 1024px;
+	}
+
+	.catchcopy {
+		position: absolute;
+		width: 640px;
+		bottom: 20px;
+	}
+}
+
+@media screen and (max-width: 1023px) {
+	.container {
+		width: 100%;
+	}
+
+	.header {
+		height: 320px;
+	}
+
+	.catchcopy {
+		position: absolute;
+		width: 100%;
+		bottom: 20px;
+	}
+
+	.iphone.pc {
+		display: none;
+	}
+
+	.iphone.sp {
+		display: block;
+		text-align: center;
+	}
+
+	.iphone.sp img {
+		width: 250px;
+		height: 504px;
+	}
+
+	.features {
+		margin-top: 32px;
+	}
+	
+	.features > .item {
+		width: 100%;
+		float: none;
+	}
+	
+	.features > .item > .icon {
+		width: 100%;
+		text-align: center;
+	}
+	
+	.features > .item > .description {
+		width: 100%;
+		margin-top: 16px;
+		padding: 16px 0px 16px 0px;
+	}
+}
