@@ -176,6 +176,10 @@ header {
 		height: 320px;
 	}
 
+	.social {
+		margin-top: 16px;
+	}
+
 	.catchcopy {
 		position: absolute;
 		width: 100%;
