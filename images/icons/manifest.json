@@ -1,8 +1,8 @@
 {
-	"name":				"",
-	"short_name":		"",
-	"description":		"",
-	"start_url":		"/",
+	"name":				"WebCollector",
+	"short_name":		"WebCollector",
+	"description":		"Collect full-size screenshots of the web pages from all of the world",
+	"start_url":		"/webcollector-app",
 	"display":			"standalone",
 	"orientation":		"any",
 	"background_color":	"#fff",
