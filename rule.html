@@ -57,17 +57,17 @@
         </div>
     </header>
     <section class="container">
-			<div class="social">
-					<div class="social-twitter">
-							<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-					</div>
-					<div class="social-facebook">
-							<div class="fb-share-button" data-href="https://fromkk.github.io/webcollector-app/" data-layout="button" data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ffromkk.github.io%2Fwebcollector-app%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">シェア</a></div>
-					</div>
-					<div class="social-hatena">
-							<a href="http://b.hatena.ne.jp/entry/s/fromkk.github.io/webcollector-app/" class="hatena-bookmark-button" data-hatena-bookmark-layout="basic-label" data-hatena-bookmark-lang="en" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
-					</div>
-				</div>
+		<div class="social">
+			<div class="social-twitter">
+					<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			</div>
+			<div class="social-facebook">
+					<div class="fb-share-button" data-href="https://fromkk.github.io/webcollector-app/" data-layout="button" data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ffromkk.github.io%2Fwebcollector-app%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">シェア</a></div>
+			</div>
+			<div class="social-hatena">
+					<a href="http://b.hatena.ne.jp/entry/s/fromkk.github.io/webcollector-app/" class="hatena-bookmark-button" data-hatena-bookmark-layout="basic-label" data-hatena-bookmark-lang="en" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+			</div>
+		</div>
 
 		<h2 id="terms_top">WebCollector利用規約</h2>
 
@@ -148,6 +148,27 @@
         <div class="copy">
             &copy; 2018 <a href="https://fromkk.me" target="_blank">fromKK</a>.
         </div>
-    </section>
+	</section>
+	<div id="fb-root"></div>
+    <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12&appId=320094701373274&autoLogAppEvents=1';
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+	<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyA-ROYz0YL5WtDpY0w1b8SAAYXhvG91CzU",
+        authDomain: "webcollector-753eb.firebaseapp.com",
+        databaseURL: "https://webcollector-753eb.firebaseio.com",
+        projectId: "webcollector-753eb",
+        storageBucket: "webcollector-753eb.appspot.com",
+        messagingSenderId: "386312605629"
+    };
+    firebase.initializeApp(config);
+    </script>
 </body>
 </html>
